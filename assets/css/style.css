@@ -38,6 +38,16 @@ h6 {
 # Back to top button
 --------------------------------------------------------------*/
 
+.btn-read {
+    display: inline-block;
+    background: #f6b024;
+    color: #fff;
+    padding: 6px 20px;
+    transition: 0.3s;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
 .back-to-top {
     position: fixed;
     visibility: hidden;
@@ -123,6 +133,7 @@ h6 {
     height: 60px;
     padding: 0;
     font-size: 18px;
+    background: rgba(13, 112, 199, 0.9);
     transition: all 0.5s;
     overflow: hidden;
     color: rgba(255, 255, 255, 0.8);
@@ -168,6 +179,21 @@ h6 {
 
 #topbar .cta a:hover {
     background: #f1a40a;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    margin-right: 10px; /* Espace entre les icônes */
+    background-color: #fff; /* Couleur de fond blanc */
+    padding: 8px; /* Espace intérieur du carré blanc */
+}
+
+.social-icons i {
+    font-size: 23px; /* Taille de l'icône */
+    color: rgba(13, 112, 199, 0.9); /* Couleur de l'icône */
 }
 
 /*--------------------------------------------------------------
@@ -493,6 +519,7 @@ h6 {
     transition: 0.3s;
 }
 
+
 #hero:before {
     content: "";
     background: rgba(6, 101, 183, 0.9);
@@ -545,7 +572,7 @@ h6 {
     height: auto;
 }
 
-#hero .btn-get-started {
+.boutton .btn-get-started {
     font-family: "Raleway", sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -559,9 +586,13 @@ h6 {
     color: #fff;
     animation-delay: 0.8s;
     border: 2px solid #f6b024;
+    
+    color: #fff;
+    text-decoration: none;
+    
 }
 
-#hero .btn-get-started:hover {
+.btn-get-started:hover {
     background: #f6b024;
     color: #fff;
     text-decoration: none;
