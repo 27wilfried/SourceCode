@@ -525,8 +525,9 @@ h6 {
 
 
 
-
-
+.bg-taille {
+    height: 550px;
+}
 
 .navbar {
     padding: 0;
