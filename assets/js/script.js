@@ -15,7 +15,7 @@ document.querySelectorAll('.products-container .product').forEach(product => {
             }
         });
 
-        // Ajout de la logique pour fermer la carte lors du clic sur le bouton "fas fa-times"
+        // fermer la carte lors du clic sur le bouton "fas fa-times"
         let closeButton = preveiwContainer.querySelector('.fa-times');
         if (closeButton) {
             closeButton.onclick = () => {
@@ -28,29 +28,18 @@ document.querySelectorAll('.products-container .product').forEach(product => {
     };
 });
 
-// Ajout de la logique pour fermer la carte lors du clic sur le bouton "fas fa-times" dans chaque preview
-previewBox.forEach(preview => {
-    let closeButton = preview.querySelector('.fa-times');
-    if (closeButton) {
-        closeButton.onclick = () => {
-            preview.classList.remove('active');
-            preveiwContainer.style.display = 'none';
-        };
-    }
-});
-
 // Sélectionnez l'icône de fermeture du panier
 let closeCartIcon = document.querySelector('.cart-sidebar .close');
 
-// Ajoutez un événement de clic à l'icône de fermeture du panier
+// événement de clic à l'icône de fermeture du panier
 closeCartIcon.addEventListener('click', () => {
     closeCartSidebar();
 });
 
-// Fonction pour fermer la latérale droite du panier
+// Fonction pour fermer le panier
 function closeCartSidebar() {
-    // Supprime la classe 'active' pour masquer la latérale droite
-    cartSidebar.classList.remove('active');
+    let cartSidebar = document.getElementById('cart-sidebar');
+    cartSidebar.style.display = 'none';
+    // Vous pouvez également ajouter d'autres logiques ici si nécessaire
 }
-
 
